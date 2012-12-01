@@ -1,0 +1,19 @@
+{
+   "browser_action": {
+      "default_icon": "logo.png",
+      "default_popup": "popup.html"
+   },
+   "description": "An extension for Umbraco developers. Switch between normal, debug and umbraco and search. By Kenneth Solberg, kenneth@codewise.no",
+   "icons": {
+      "128": "icon128.png",
+      "16": "icon16.png",
+      "32": "icon32.png",
+      "48": "icon48.png"
+   },
+   "name": "Umbraco Developer Extension",
+   "permissions": [ "tabs" ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "1.2",
+   "manifest_version": 2
+}
+ 

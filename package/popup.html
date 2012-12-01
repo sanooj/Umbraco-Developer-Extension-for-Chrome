@@ -1,0 +1,42 @@
+<!-- kenny.no -->
+
+<style>
+
+    body 
+    {
+        min-width: 120px;
+        overflow-x: hidden;    
+    }
+    
+    body, input          
+    {
+    	font-family: "MS Sans Serif";
+        font-size: 12px;
+    }
+
+    a 
+    {
+	    color: #000;
+	    display: block;
+	    padding: 1px 6px 3px 6px;
+	    text-decoration: none;
+	    margin: 2px 0;
+    }
+
+    a:hover   { background: #f9e3d4; -webkit-border-radius: 3px; }
+    a.current { background: #fe8f43; -webkit-border-radius: 3px; color: #fff; }
+    
+    input { color: #aaaaaa; }
+    
+</style>
+
+<a href="#" id="normal">Normal</a>
+<a href="#" id="debug">Debug</a>
+<a href="#" id="debug_trace">Debug + Trace</a>
+<a href="#" id="umbraco">Umbraco</a>
+
+<input type="text" id="s_our" value="Our search" /> 
+<input type="text" id="s_custom" value="Custom search" /> 
+
+<span id="debug"></span>
+<script type="text/javascript" src="background.js"></script>
