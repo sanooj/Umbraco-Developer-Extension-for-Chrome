@@ -47,9 +47,17 @@
         });
     };
 
-    a_normal.onclick = function() {
+    a_normal.onclick = function(e) {
+		e.preventDefault();
         chrome.tabs.getSelected(null, function(tab) {
-            chrome.tabs.update(tab.id, { url: reset_url(tab.url, false) });
+			var code = e.which;
+			if(code === 2) {
+				chrome.tabs.create({ url: reset_url(tab.url, false) });
+			}
+			else if (code === 1) {
+				chrome.tabs.update(tab.id, { url: reset_url(tab.url, false) });
+			}
+           
             window.close();
             //reset_menu();
         });
